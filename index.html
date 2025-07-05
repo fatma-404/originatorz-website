@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Originatorz</title>
+
+  <!-- Tailwind CSS (your built file) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Poppins] bg-white text-gray-800">
+
+  <!-- Navbar -->
+<nav class="bg-[#f9fafb] shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Originatorz Logo" class="h-10">
+      <span class="font-bold text-[#051e4d] text-xl">Originatorz</span>
+      <span class="text-sm text-[#051e4d]/60 ml-2 hidden md:inline">Workday & Automation Experts</span>
+    </div>
+    <ul class="flex gap-6 font-semibold text-[#051e4d]">
+      <li><a href="#services" class="hover:underline">Services</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <li><a href="#about" class="hover:underline">About Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+<section class="relative bg-[#f9fafb] overflow-hidden py-24 md:py-14 font-inter">
+  <!-- Subtle gradient overlay for depth -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="bg-gradient-to-br from-white via-[#f9fafb] to-white opacity-60"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+    
+    <!-- LEFT SIDE: Text (60%) -->
+    <div class="md:w-3/5 w-full text-left">
+      
+      <!-- Badge / Callout -->
+      <span class="inline-block mb-4 px-3 py-1 bg-[#051e4d]/10 text-[#051e4d] rounded-full text-sm font-semibold">
+        Trusted Workday® Experts
+      </span>
+      
+      <!-- Main Heading -->
+      <h1 class="text-5xl md:text-6xl font-extrabold text-[#051e4d] mb-8 leading-tight">
+        Empower Your Workday® Experience with <i>Originatorz</i>
+      </h1>
+      
+      <!-- Subheading -->
+      <p class="text-xl md:text-2xl text-[#051e4d]/80 mb-10 max-w-2xl">
+        Tailored implementation, seamless integration & ongoing support built by certified specialists.
+      </p>
+      
+      <!-- Call-to-action Buttons -->
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact"
+          class="bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full border border-[#051e4d] transition duration-300 hover:bg-white hover:text-[#051e4d]">
+          Request Demo
+        </a>
+
+        <a href="#services"
+          class="bg-white text-[#051e4d] font-semibold px-6 py-3 rounded-full border border-[#051e4d] transition duration-300 hover:bg-[#051e4d] hover:text-white">
+          Our Services
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: Illustration (40%) -->
+    <div class="md:w-2/5 w-full">
+      <img src="images/undraw_report_k55w.svg" alt="Workday Consulting Illustration" class="w-full max-w-md mx-auto">
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+<!-- Services Section -->
+<section id="services" class="bg-[#f9fafb] py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center text-[#051e4d] mb-16">
+      Our Services
+    </h2>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div class="w-full max-w-[400px] mx-auto">
+        <div class="aspect-square w-full">
+          <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 h-full w-full flex flex-col items-center justify-center text-center hover:-translate-y-1 hover:shadow-xl transition overflow-hidden">
+            <img src="images/team.png" alt="Workday Consultancy" class="h-16 w-16 mb-4">
+            <h3 class="text-2xl font-bold text-[#051e4d] mb-3">Workday® Consultancy</h3>
+            <p class="text-[#051e4d]/80 mb-6">
+              Tailored implementation, optimization & support for Workday® platforms. Certified consultants to scale your HR, Finance & Ops.
+            </p>
+            <a href="#workday" class="text-[#051e4d] font-semibold hover:underline">Explore Workday Services →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="w-full max-w-[400px] mx-auto">
+        <div class="aspect-square w-full">
+          <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 h-full w-full flex flex-col items-center justify-center text-center hover:-translate-y-1 hover:shadow-xl transition overflow-hidden">
+            <img src="images/wrench.png" alt="QA Automation" class="h-16 w-16 mb-4">
+            <h3 class="text-2xl font-bold text-[#051e4d] mb-3">QA Automation</h3>
+            <p class="text-[#051e4d]/80 mb-6">
+              Future-proof testing solutions using Selenium, Cypress & Tosca. Reduce bugs, save time, and boost reliability.
+            </p>
+            <a href="#qa" class="text-[#051e4d] font-semibold hover:underline">See QA Solutions →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-[#f9fafb] py-24">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-[#051e4d] mb-4">Let's Connect</h2>
+      <p class="text-[#051e4d]/80 max-w-2xl mx-auto">
+        Ready to transform your Workday® experience? Let's turn your ideas into action.
+      </p>
+    </div>
+    
+    <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 grid md:grid-cols-2 gap-8 items-center">
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div class="flex items-center gap-4">
+          <span class="text-[#051e4d] text-3xl">📧</span>
+          <div>
+            <p class="text-lg font-semibold text-[#051e4d]">Email</p>
+            <p class="text-[#051e4d]/80">info@originatorz.com</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-[#051e4d] text-3xl">📞</span>
+          <div>
+            <p class="text-lg font-semibold text-[#051e4d]">Phone</p>
+            <p class="text-[#051e4d]/80">+47 929 43 181</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-[#051e4d] text-3xl">📍</span>
+          <div>
+            <p class="text-lg font-semibold text-[#051e4d]">Address</p>
+            <p class="text-[#051e4d]/80">Høvik Terrasse 22, 3413 Lier, Norway</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input type="text" placeholder="First Name" class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-[#051e4d]/50">
+          <input type="text" placeholder="Last Name" class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-[#051e4d]/50">
+        </div>
+        <input type="email" placeholder="Email" class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-[#051e4d]/50">
+        <textarea rows="4" placeholder="Your Message" class="border border-gray-300 rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-[#051e4d]/50"></textarea>
+        <button type="submit" class="bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-[#051e4d] border border-[#051e4d] transition duration-300">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+<section id="about" class="bg-[#f9fafb] py-24">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Image or Illustration -->
+    <div>
+      <img src="images/undraw_designer_efwz.svg" alt="About Originatorz" class="rounded-xl shadow-lg w-full">
+    </div>
+
+    <!-- Text Content -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold text-[#051e4d] mb-6">Who We Are</h2>
+      <p class="text-lg text-[#051e4d]/80 mb-6">
+        At Originatorz, we’re not your average tech team — we’re the behind-the-scenes experts making your HR, Finance,
+        and Operations run smoother than ever. Our certified Workday® consultants and QA specialists deliver tailored solutions
+        that actually make sense.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
+          <p class="text-3xl font-bold text-[#051e4d]">10+</p>
+          <p class="text-[#051e4d]/80">Years Experience</p>
+        </div>
+        <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
+          <p class="text-3xl font-bold text-[#051e4d]">25+</p>
+          <p class="text-[#051e4d]/80">Global Clients</p>
+        </div>
+        <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
+          <p class="text-3xl font-bold text-[#051e4d]">Certified</p>
+          <p class="text-[#051e4d]/80">Workday® Experts</p>
+        </div>
+      </div>
+      <a href="#contact" class="inline-block bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-[#051e4d] border border-[#051e4d] transition duration-300">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-[#051e4d] text-white text-center py-6 text-sm">
+    <div class="max-w-4xl mx-auto px-4">
+      &copy; 2025 Originatorz. All rights reserved.
+    </div>
+  </footer>
+</body>
+
+</html>
