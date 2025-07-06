@@ -21,51 +21,44 @@
 </head>
 <body class="font-[Poppins] bg-white text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="bg-[#f9fafb] shadow-md fixed top-0 left-0 w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-      <!-- Logo and Brand -->
-      <div class="flex items-center gap-3">
-        <img src="images/logo.png" alt="Originatorz Logo" class="h-10">
-        <div class="flex flex-col">
-          <span class="font-bold text-[#051e4d] text-xl">Originatorz</span>
-          <span class="text-sm text-[#051e4d]/60 hidden md:inline">Workday & Automation Experts</span>
-        </div>
+<!-- Navbar -->
+<nav class="bg-[#f9fafb] shadow-md fixed top-0 left-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    
+    <!-- Logo and Brand wrapped in link to top -->
+    <a href="#" class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Originatorz Logo" class="h-10">
+      <div class="flex flex-col">
+        <span class="font-bold text-[#051e4d] text-xl">Originatorz</span>
+        <span class="text-sm text-[#051e4d]/60 hidden md:inline">Workday & Automation Experts</span>
       </div>
+    </a>
 
-      <!-- Mobile Menu Button -->
-      <button id="menu-toggle" class="md:hidden text-[#051e4d] focus:outline-none">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-[#051e4d] focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
 
-      <!-- Desktop Menu -->
-      <ul class="hidden md:flex gap-6 font-semibold text-[#051e4d]">
-        <li><a href="#services" class="hover:underline">Services</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-        <li><a href="#about" class="hover:underline">About Us</a></li>
-      </ul>
-    </div>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 font-semibold text-[#051e4d]">
+      <li><a href="#services" class="hover:underline">Services</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <li><a href="#about" class="hover:underline">About Us</a></li>
+    </ul>
+  </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
-      <ul class="flex flex-col gap-4 font-semibold text-[#051e4d] bg-[#f9fafb] rounded-lg shadow-md p-4">
-        <li><a href="#services" class="hover:underline">Services</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-        <li><a href="#about" class="hover:underline">About Us</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+    <ul class="flex flex-col gap-4 font-semibold text-[#051e4d] bg-[#f9fafb] rounded-lg shadow-md p-4">
+      <li><a href="#services" class="hover:underline">Services</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+      <li><a href="#about" class="hover:underline">About Us</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- Toggle Script -->
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    toggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
 
   <!-- Hero Section -->
   <section class="relative bg-[#f9fafb] overflow-hidden pt-32 pb-24 font-inter">
@@ -118,7 +111,7 @@
               <p class="text-[#051e4d]/80 mb-6">
                 Tailored implementation, optimization & support for Workday® platforms. Certified consultants to scale your HR, Finance & Ops.
               </p>
-              <a href="#workday" class="text-[#051e4d] font-semibold hover:underline">Explore Workday Services →</a>
+            
             </div>
           </div>
         </div>
@@ -131,7 +124,7 @@
               <p class="text-[#051e4d]/80 mb-6">
                 Future-proof testing solutions using Selenium, Cypress & Tosca. Reduce bugs, save time, and boost reliability.
               </p>
-              <a href="#qa" class="text-[#051e4d] font-semibold hover:underline">See QA Solutions →</a>
+              
             </div>
           </div>
         </div>
@@ -230,6 +223,14 @@
       &copy; 2025 Originatorz. All rights reserved.
     </div>
   </footer>
+  <script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggleButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>
