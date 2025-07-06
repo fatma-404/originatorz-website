@@ -1,261 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Originatorz</title>
 
-  <!-- Tailwind CSS (your built file) -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-</head>
-
-<body class="font-[Poppins] bg-white text-gray-800">
-
   <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <!-- Meta Tags -->
   <meta name="description" content="Originatorz - Your trusted Workday® experts for tailored implementation, seamless integration & ongoing support.">
   <meta name="keywords" content="Workday, Consulting, Automation, QA, Originatorz">
   <meta name="author" content="Originatorz">
 
-<!-- Navbar -->
-<nav class="bg-[#f9fafb] shadow-md fixed top-0 left-0 w-full z-50">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-    
-    <!-- Logo + Text -->
-    <div class="flex items-center gap-3">
-      <img src="images/logo.png" alt="Originatorz Logo" class="h-10">
-      <div class="flex flex-col">
-        <span class="font-bold text-[#051e4d] text-xl">Originatorz</span>
-        <span class="text-sm text-[#051e4d]/60 hidden md:inline">Workday & Automation Experts</span>
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Poppins] bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-[#f9fafb] shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo and Brand -->
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Originatorz Logo" class="h-10">
+        <div class="flex flex-col">
+          <span class="font-bold text-[#051e4d] text-xl">Originatorz</span>
+          <span class="text-sm text-[#051e4d]/60 hidden md:inline">Workday & Automation Experts</span>
+        </div>
       </div>
-    </div>
-    
-    <!-- Mobile menu button -->
-    <button id="menu-toggle" class="md:hidden text-[#051e4d] focus:outline-none">
-      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
-    
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex gap-6 font-semibold text-[#051e4d]">
-      <li><a href="#services" class="hover:underline">Services</a></li>
-      <li><a href="#contact" class="hover:underline">Contact</a></li>
-      <li><a href="#about" class="hover:underline">About Us</a></li>
-    </ul>
-  </div>
-  
-  <!-- Mobile Menu (hidden by default) -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-    <ul class="flex flex-col gap-4 font-semibold text-[#051e4d] bg-[#f9fafb] rounded-lg shadow-md p-4">
-      <li><a href="#services" class="hover:underline">Services</a></li>
-      <li><a href="#contact" class="hover:underline">Contact</a></li>
-      <li><a href="#about" class="hover:underline">About Us</a></li>
-    </ul>
-  </div>
-</nav>
-<script>
-  // Simple toggle script
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('menu');
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
 
+      <!-- Mobile Menu Button -->
+      <button id="menu-toggle" class="md:hidden text-[#051e4d] focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
 
-
-<!-- Hero Section -->
-<section class="relative bg-[#f9fafb] overflow-hidden pt-32 pb-24 md:pt-36 md:pb-28 font-inter">
-  <!-- Subtle gradient overlay for depth -->
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="bg-gradient-to-br from-white via-[#f9fafb] to-white opacity-60"></div>
-  </div>
-
-  <div class="relative max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
-    
-    <!-- LEFT SIDE: Text (60%) -->
-    <div class="md:w-3/5 w-full text-left">
-      
-      <!-- Badge / Callout -->
-      <span class="inline-block mb-4 px-3 py-1 bg-[#051e4d]/10 text-[#051e4d] rounded-full text-sm font-semibold">
-        Trusted Workday® Experts
-      </span>
-      
-      <!-- Main Heading -->
-      <h1 class="text-5xl md:text-6xl font-extrabold text-[#051e4d] mb-8 leading-tight">
-        Empower Your Workday® Experience with <i>Originatorz</i>
-      </h1>
-      
-      <!-- Subheading -->
-      <p class="text-xl md:text-2xl text-[#051e4d]/80 mb-10 max-w-2xl">
-        Tailored implementation, seamless integration & ongoing support built by certified specialists.
-      </p>
-      
-      <!-- Call-to-action Buttons -->
-      <div class="flex flex-wrap gap-4">
-        <a href="#contact"
-          class="bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full border border-[#051e4d] transition duration-300 hover:bg-white hover:text-[#051e4d]">
-          Request Demo
-        </a>
-
-        <a href="#services"
-          class="bg-white text-[#051e4d] font-semibold px-6 py-3 rounded-full border border-[#051e4d] transition duration-300 hover:bg-[#051e4d] hover:text-white">
-          Our Services
-        </a>
-      </div>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-6 font-semibold text-[#051e4d]">
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+        <li><a href="#about" class="hover:underline">About Us</a></li>
+      </ul>
     </div>
 
-    <!-- RIGHT SIDE: Illustration (40%) -->
-    <div class="md:w-2/5 w-full">
-      <img src="images/undraw_report_k55w.svg" alt="Workday Consulting Illustration" class="w-full max-w-md mx-auto">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+      <ul class="flex flex-col gap-4 font-semibold text-[#051e4d] bg-[#f9fafb] rounded-lg shadow-md p-4">
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+        <li><a href="#about" class="hover:underline">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Toggle Script -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero Section -->
+  <section class="relative bg-[#f9fafb] overflow-hidden pt-36 pb-24 font-inter">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="bg-gradient-to-br from-white via-[#f9fafb] to-white opacity-60"></div>
     </div>
 
-  </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="bg-[#f9fafb] py-24">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-center text-[#051e4d] mb-16">
-      Our Services
-    </h2>
-
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Card 1 -->
-      <div class="w-full max-w-[400px] mx-auto">
-        <div class="aspect-square w-full">
-          <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 h-full w-full flex flex-col items-center justify-center text-center hover:-translate-y-1 hover:shadow-xl transition overflow-hidden">
-            <img src="images/team.png" alt="Workday Consultancy" class="h-16 w-16 mb-4">
-            <h3 class="text-2xl font-bold text-[#051e4d] mb-3">Workday® Consultancy</h3>
-            <p class="text-[#051e4d]/80 mb-6">
-              Tailored implementation, optimization & support for Workday® platforms. Certified consultants to scale your HR, Finance & Ops.
-            </p>
-            <a href="#workday" class="text-[#051e4d] font-semibold hover:underline">Explore Workday Services →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="w-full max-w-[400px] mx-auto">
-        <div class="aspect-square w-full">
-          <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 h-full w-full flex flex-col items-center justify-center text-center hover:-translate-y-1 hover:shadow-xl transition overflow-hidden">
-            <img src="images/wrench.png" alt="QA Automation" class="h-16 w-16 mb-4">
-            <h3 class="text-2xl font-bold text-[#051e4d] mb-3">QA Automation</h3>
-            <p class="text-[#051e4d]/80 mb-6">
-              Future-proof testing solutions using Selenium, Cypress & Tosca. Reduce bugs, save time, and boost reliability.
-            </p>
-            <a href="#qa" class="text-[#051e4d] font-semibold hover:underline">See QA Solutions →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="contact" class="bg-[#f9fafb] py-24">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-[#051e4d] mb-12">
-      Let's Connect
-    </h2>
-    
-    <div class="grid md:grid-cols-3 gap-8 text-left">
-      
-      <!-- Email Card -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start hover:-translate-y-1 hover:shadow-xl transition">
-        <div class="flex items-center mb-4">
-          <svg class="h-8 w-8 text-[#051e4d]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6" />
-          </svg>
-          <h3 class="text-xl font-bold text-[#051e4d] ml-3">Email</h3>
-        </div>
-        <p class="text-[#051e4d]/80 mb-2">info@originatorz.com</p>
-      </div>
-
-      <!-- Phone Card -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start hover:-translate-y-1 hover:shadow-xl transition">
-        <div class="flex items-center mb-4">
-          <!-- Example 1: Phone Icon (Heroicons outline, recommended for contact/phone) -->
-          <svg class="h-8 w-8 text-[#051e4d]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a2 2 0 011.94 1.515l.518 2.073a2 2 0 01-.45 1.947l-1.27 1.27a16.001 16.001 0 006.586 6.586l1.27-1.27a2 2 0 011.947-.45l2.073.518A2 2 0 0121 17.72V21a2 2 0 01-2 2h-1C9.163 23 1 14.837 1 5V4a2 2 0 012-2z"/>
-          </svg>
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h1.586a1 1 0 01.707.293l2.414 2.414A2 2 0 0110 6.586V7a2 2 0 002 2h4a2 2 0 012 2v3a2 2 0 01-2 2h-1a1 1 0 00-1 1v1a2 2 0 01-2 2h-2a2 2 0 01-2-2v-1a1 1 0 00-1-1H6a2 2 0 01-2-2V5z" />
-          </svg>
-          <h3 class="text-xl font-bold text-[#051e4d] ml-3">Phone</h3>
-        </div>
-        <p class="text-[#051e4d]/80 mb-2">+47 929 43 181</p>
-      </div>
-
-      <!-- Address Card -->
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start hover:-translate-y-1 hover:shadow-xl transition">
-        <div class="flex items-center mb-4">
-          <svg class="h-8 w-8 text-[#051e4d]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 4.25 7 13 7 13s7-8.75 7-13c0-3.87-3.13-7-7-7z" />
-            <circle cx="12" cy="9" r="2.5" />
-          </svg>
-          <h3 class="text-xl font-bold text-[#051e4d] ml-3">Address</h3>
-        </div>
-        <p class="text-[#051e4d]/80">
-          Høvik Terrasse 22, 3413 Lier, Norway.
+    <div class="relative max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+      <!-- Left Side -->
+      <div class="md:w-3/5 w-full text-left">
+        <span class="inline-block mb-4 px-3 py-1 bg-[#051e4d]/10 text-[#051e4d] rounded-full text-sm font-semibold">
+          Trusted Workday® Experts
+        </span>
+        <h1 class="text-5xl md:text-6xl font-extrabold text-[#051e4d] mb-8 leading-tight">
+          Empower Your Workday® Experience with <i>Originatorz</i>
+        </h1>
+        <p class="text-xl md:text-2xl text-[#051e4d]/80 mb-10 max-w-2xl">
+          Tailored implementation, seamless integration & ongoing support built by certified specialists.
         </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full border border-[#051e4d] transition duration-300 hover:bg-white hover:text-[#051e4d]">
+            Request Demo
+          </a>
+          <a href="#services" class="bg-white text-[#051e4d] font-semibold px-6 py-3 rounded-full border border-[#051e4d] transition duration-300 hover:bg-[#051e4d] hover:text-white">
+            Our Services
+          </a>
+        </div>
       </div>
-
+      <!-- Right Side -->
+      <div class="md:w-2/5 w-full">
+        <img src="images/undraw_report_k55w.svg" alt="Workday Consulting Illustration" class="w-full max-w-md mx-auto">
+      </div>
     </div>
+  </section>
 
-    <!-- Optional CTA Button -->
-    <div class="mt-12">
-      <a href="mailto:asif.satti@originatorz.com" class="bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full border border-[#051e4d] transition duration-300 hover:bg-white hover:text-[#051e4d]">
-        Email Us Now
-      </a>
+  <!-- Services Section -->
+  <section id="services" class="bg-[#f9fafb] py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-[#051e4d] mb-16">
+        Our Services
+      </h2>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Service Card 1 -->
+        <div class="w-full max-w-[400px] mx-auto">
+          <div class="aspect-square w-full">
+            <div class="bg-white rounded-xl shadow-lg p-8 h-full w-full flex flex-col items-center justify-center text-center hover:-translate-y-1 hover:shadow-xl transition overflow-hidden">
+              <img src="images/team.png" alt="Workday Consultancy" class="h-16 w-16 mb-4">
+              <h3 class="text-2xl font-bold text-[#051e4d] mb-3">Workday® Consultancy</h3>
+              <p class="text-[#051e4d]/80 mb-6">
+                Tailored implementation, optimization & support for Workday® platforms. Certified consultants to scale your HR, Finance & Ops.
+              </p>
+              <a href="#workday" class="text-[#051e4d] font-semibold hover:underline">Explore Workday Services →</a>
+            </div>
+          </div>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="w-full max-w-[400px] mx-auto">
+          <div class="aspect-square w-full">
+            <div class="bg-white rounded-xl shadow-lg p-8 h-full w-full flex flex-col items-center justify-center text-center hover:-translate-y-1 hover:shadow-xl transition overflow-hidden">
+              <img src="images/wrench.png" alt="QA Automation" class="h-16 w-16 mb-4">
+              <h3 class="text-2xl font-bold text-[#051e4d] mb-3">QA Automation</h3>
+              <p class="text-[#051e4d]/80 mb-6">
+                Future-proof testing solutions using Selenium, Cypress & Tosca. Reduce bugs, save time, and boost reliability.
+              </p>
+              <a href="#qa" class="text-[#051e4d] font-semibold hover:underline">See QA Solutions →</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Contact Section (Cards only) -->
+  <section id="contact" class="bg-[#f9fafb] py-24">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-[#051e4d] mb-12">
+        Let's Connect
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <!-- Email Card -->
+        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-[#051e4d]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6" />
+            </svg>
+            <h3 class="text-xl font-bold text-[#051e4d] ml-3">Email</h3>
+          </div>
+          <p class="text-[#051e4d]/80 mb-2">info@originatorz.com</p>
+        </div>
+        <!-- Phone Card -->
+        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-[#051e4d]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a2 2 0 011.94 1.515l.518 2.073a2 2 0 01-.45 1.947l-1.27 1.27a16.001 16.001 0 006.586 6.586l1.27-1.27a2 2 0 011.947-.45l2.073.518A2 2 0 0121 17.72V21a2 2 0 01-2 2h-1C9.163 23 1 14.837 1 5V4a2 2 0 012-2z"/>
+            </svg>
+            <h3 class="text-xl font-bold text-[#051e4d] ml-3">Phone</h3>
+          </div>
+          <p class="text-[#051e4d]/80 mb-2">+47 929 43 181</p>
+        </div>
+        <!-- Address Card -->
+        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start hover:-translate-y-1 hover:shadow-xl transition">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-[#051e4d]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 4.25 7 13 7 13s7-8.75 7-13c0-3.87-3.13-7-7-7z" />
+              <circle cx="12" cy="9" r="2.5" />
+            </svg>
+            <h3 class="text-xl font-bold text-[#051e4d] ml-3">Address</h3>
+          </div>
+          <p class="text-[#051e4d]/80">
+            Høvik Terrasse 22, 3413 Lier, Norway.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- About Section -->
-<section id="about" class="bg-[#f9fafb] py-24">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-    <!-- Image or Illustration -->
-    <div>
-      <img src="images/undraw_designer_efwz.svg" alt="About Originatorz" class="rounded-xl shadow-lg w-full">
-    </div>
-
-    <!-- Text Content -->
-    <div>
-      <h2 class="text-4xl md:text-5xl font-bold text-[#051e4d] mb-6">Who We Are</h2>
-      <p class="text-lg text-[#051e4d]/80 mb-6">
-        At Originatorz, we’re not your average tech team — we’re the behind-the-scenes experts making your HR, Finance,
-        and Operations run smoother than ever. Our certified Workday® consultants and QA specialists deliver tailored solutions
-        that actually make sense.
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-        <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
-          <p class="text-3xl font-bold text-[#051e4d]">10+</p>
-          <p class="text-[#051e4d]/80">Years Experience</p>
-        </div>
-        <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
-          <p class="text-3xl font-bold text-[#051e4d]">25+</p>
-          <p class="text-[#051e4d]/80">Global Clients</p>
-        </div>
-        <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
-          <p class="text-3xl font-bold text-[#051e4d]">Certified</p>
-          <p class="text-[#051e4d]/80">Workday® Experts</p>
-        </div>
+  <section id="about" class="bg-[#f9fafb] py-24">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="images/undraw_designer_efwz.svg" alt="About Originatorz" class="rounded-xl shadow-lg w-full">
       </div>
-      <a href="#contact" class="inline-block bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-[#051e4d] border border-[#051e4d] transition duration-300">
-        Get in Touch
-      </a>
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold text-[#051e4d] mb-6">Who We Are</h2>
+        <p class="text-lg text-[#051e4d]/80 mb-6">
+          At Originatorz, we’re not your average tech team — we’re the behind-the-scenes experts making your HR, Finance,
+          and Operations run smoother than ever. Our certified Workday® consultants and QA specialists deliver tailored solutions
+          that actually make sense.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
+            <p class="text-3xl font-bold text-[#051e4d]">10+</p>
+            <p class="text-[#051e4d]/80">Years Experience</p>
+          </div>
+          <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
+            <p class="text-3xl font-bold text-[#051e4d]">25+</p>
+            <p class="text-[#051e4d]/80">Global Clients</p>
+          </div>
+          <div class="bg-[#f0f4f8] rounded-lg p-4 text-center">
+            <p class="text-3xl font-bold text-[#051e4d]">Certified</p>
+            <p class="text-[#051e4d]/80">Workday® Experts</p>
+          </div>
+        </div>
+        <a href="#contact" class="inline-block bg-[#051e4d] text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-[#051e4d] border border-[#051e4d] transition duration-300">
+          Get in Touch
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-[#051e4d] text-white text-center py-6 text-sm">
@@ -263,6 +224,6 @@
       &copy; 2025 Originatorz. All rights reserved.
     </div>
   </footer>
-</body>
 
+</body>
 </html>
